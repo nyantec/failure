@@ -6,5 +6,6 @@ rust:
     - nightly
 cache: cargo
 script:
-- cargo test
-- cargo test --no-default-features
+  - cargo test
+  - cargo test --features backtrace
+  - cargo check --no-default-features
